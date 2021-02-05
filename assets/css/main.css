@@ -3965,6 +3965,11 @@ input, select, textarea {
 		text-align: center;
 	}
 
+	.contact-form {
+		width: 80%;
+		margin: auto;
+	}
+
 		#footer input, #footer select, #footer textarea {
 			color: #717981;
 		}
