@@ -12,6 +12,7 @@
 		$header = $('#header'),
 		$nav = $('#nav'),
 		$main = $('#main'),
+		$home = $('#home'),
 		$navPanelToggle, $navPanel, $navPanelInner;
 
 	// Breakpoints.
@@ -225,10 +226,10 @@
 						top: '25vh',
 						bottom: '-50vh',
 						enter: function() {
-							$intro.addClass('hidden');
+							$home.addClass('hidden');
 						},
 						leave: function() {
-							$intro.removeClass('hidden');
+							$home.removeClass('hidden');
 						}
 					});
 
