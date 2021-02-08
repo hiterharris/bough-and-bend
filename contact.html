@@ -28,7 +28,7 @@
 							<li><a href="design.html">Design</a></li>
 							<li><a href="blog.html">Blog</a></li>
 							<li><a href="about.html">About</a></li>
-							<li class="active"><a href="contact.html">Contact</a></li>
+							<!-- <li class="active"><a href="contact.html">Contact</a></li> -->
 						</ul>
 						<ul class="icons">
 							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
@@ -46,25 +46,35 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<section class="contact-form">
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
+							<form id="fcf-form-id" class="fcf-form-class" method="post" action="assets/php/contact-form-process.php">
+        
+								<div class="fcf-form-group">
+									<label for="Name" class="fcf-label">Your name</label>
+									<div class="fcf-input-group">
+										<input type="text" id="Name" name="Name" class="fcf-form-control" required>
 									</div>
-									<div class="field">
-										<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="3"></textarea>
-										</div>
+								</div>
+						
+								<div class="fcf-form-group">
+									<label for="Email" class="fcf-label">Your email address</label>
+									<div class="fcf-input-group">
+										<input type="email" id="Email" name="Email" class="fcf-form-control" required>
 									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" /></li>
-									</ul>
-								</form>
+								</div>
+						
+								<div class="fcf-form-group">
+									<label for="Message" class="fcf-label">Your message</label>
+									<div class="fcf-input-group">
+										<textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+									</div>
+								</div>
+						
+								<div class="fcf-form-group">
+									<button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+								</div>
+					
+						
+							</form>
 							</section>
 						</footer>
 
@@ -107,7 +117,5 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/helpers.js"></script>
-			<script src="assets/js/api.js"></script>
-
 	</body>
 </html>
